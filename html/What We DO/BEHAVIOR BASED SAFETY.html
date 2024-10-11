@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Root Core Solutions</title>
+    <link rel="stylesheet" href="../../../css/output.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-[#e5e2c9] fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out opacity-0 animate-fade-in">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="../../images/logo-removebg-preview (2).png" alt="logo" class="h-32">
+            <div class="md:hidden cursor-pointer h-12" id="nav-toggle">☰</div>
+            <div class="nav-elements hidden md:flex md:space-x-4">
+                <ul class="flex flex-row space-x-6">
+                    <li><a href="../../index.html" class="nav-link text-md text-green-900 hover:underline">Home</a></li>
+                    <li class="relative group">
+                        <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
+                        <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
+                            <li><a href="../About Us/AboutRootCareSolutions/About US.html" class="dropdown-item block p-2 hover:bg-gray-200">About RootCoreSolutions</a></li>
+                            <li><a href="../About Us/News.html" class="dropdown-item block p-2 hover:bg-gray-200">News</a></li>
+                            <li><a href="../About Us/Careers.html" class="dropdown-item block p-2 hover:bg-gray-200">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#capabilities" class="nav-link text-md text-green-900 hover:underline">Our Capabilities</a>
+                        <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block w-5/6">
+                            <li><a href="../Our Capabilities/Safety.html" class="dropdown-item block p-2 hover:bg-gray-200">Safety</a></li>
+                            <li><a href="../Our Capabilities/Quality.html" class="dropdown-item block p-2 hover:bg-gray-200">Quality</a></li>
+                            <li><a href="../Our Capabilities/What Makes Us Different.html" class="dropdown-item block p-2 hover:bg-gray-200">What Makes Us Different</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Gallery.html" class="nav-link text-md text-green-900 hover:underline">Gallery</a></li>
+                    <!-- <li class="relative group">
+                        <a href="#experts" class="nav-link text-md text-green-900 hover:underline">Our Experts</a>
+                        <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
+                            <li><a href="../Our Experts/Annasaheb Kalyanrao Shinde.html" class="dropdown-item block p-2 hover:bg-gray-200">Annasaheb Kalyanrao Shinde</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="../ContactUs.html" class="nav-link text-md text-green-900 hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden flex-col items-start mt-4 bg-[#e5e2c9] space-y-4 p-4 md:hidden">
+          <ul class="flex flex-col w-full space-y-2">
+              <li><a href="../../index.html" class="nav-link text-md text-green-900 hover:underline">Home</a></li>
+              <li class="relative">
+                  <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
+                  <!-- Submenu for About Us -->
+                  <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                      <li><a href="../About Us/AboutRootCareSolutions/About US.html" class="block p-2 text-gray-700 hover:bg-gray-200">About RootCoreSolutions</a></li>
+                      <li><a href="../About Us/News.html" class="block p-2 text-gray-700 hover:bg-gray-200">News</a></li>
+                      <li><a href="../About Us/Careers.html" class="block p-2 text-gray-700 hover:bg-gray-200">Careers</a></li>
+                  </ul>
+              </li>
+              <li class="relative">
+                  <a href="#capabilities" class="nav-link text-md text-green-900 hover:underline">Our Capabilities</a>
+                  <!-- Submenu for Capabilities -->
+                  <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                      <li><a href="../Our Capabilities/Safety.html" class="block p-2 text-gray-700 hover:bg-gray-200">Safety</a></li>
+                      <li><a href="../Our Capabilities/Quality.html" class="block p-2 text-gray-700 hover:bg-gray-200">Quality</a></li>
+                      <li><a href="../Our Capabilities/What Makes Us Different.html" class="block p-2 text-gray-700 hover:bg-gray-200">What Makes Us Different</a></li>
+                  </ul>
+              </li>
+              <li><a href="../Gallery.html" class="nav-link text-md text-green-900 hover:underline">Gallery</a></li>
+              <!-- <li class="relative">
+                  <a href="#experts" class="nav-link text-md text-green-900 hover:underline">Our Experts</a>
+                 
+                  <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                      <li><a href="../Our Experts/Annasaheb Kalyanrao Shinde.html" class="block p-2 text-gray-700 hover:bg-gray-200">Annasaheb Kalyanrao Shinde</a></li>
+                  </ul>
+              </li> -->
+              <li><a href="../ContactUs.html" class="nav-link text-md text-green-900 hover:underline">Contact Us</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- Expert Section -->
+    <section class="bg-[#234732] text-white py-8 mt-36">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h2 class="text-3xl text-white font-bold italic">Behavior-Based Safety</h2>
+        </div>
+    </section>
+<div class="flex mb-4 bg-gray-200">
+    <div class="w-64 h-screen bg-gray-200 p-4 shadow-lg">
+        <h2 class="text-lg font-bold mb-4">Contents</h2>
+    
+        <!-- Collapsible Sections -->
+        <div class="space-y-2">
+            <!-- Section 1: Fire Safety -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./Fire safety.html'">Fire Safety</button>
+                <div id="section1" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 2: Work at Height -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./WORK AT HEIGHT.html'">Work at Height</button>
+                <div id="section2" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 3: Lifting and Rigging -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./LIFTING AND RIGGING.html'">Lifting and Rigging</button>
+                <div id="section3" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 4: Work Permit System -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./WORK PERMIT SYSTEM.html'">Work Permit System</button>
+                <div id="section4" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 5: Electrical Safety -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./ELECTRICAL SAFETY.html'">Electrical Safety</button>
+                <div id="section5" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 6: Manual and Material -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./MANUAL AND MATRIAL.html'">Manual and Material</button>
+                <div id="section6" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 7: Emergency Response and First Aid -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./EMERGENCY REPONSE AND FIRST AID.html'">Emergency Response and First Aid</button>
+                <div id="section7" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 8: Scaffolding Safety -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./SCAFFOLDING SAFETY.html'">Scaffolding Safety</button>
+                <div id="section8" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 9: Head Tools and Power Tools -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./HAND TOOLS AND POWER TOOLS.html'">Head Tools and Power Tools</button>
+                <div id="section9" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 10: Confined Space Safety -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./CONFINED SPACE SAFETY.html'">Confined Space Safety</button>
+                <div id="section10" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 11: Logistic Safety -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./LOGISTIC SAFETY.html'">Logistic Safety</button>
+                <div id="section11" class="pl-6 py-2 hidden"></div>
+            </div>
+    
+            <!-- Section 12: Behaviour Based Safety -->
+            <div>
+                <button class="w-full text-left py-2 px-4 bg-gray-300 rounded hover:bg-gray-400" onclick="location.href='./BEHAVIOR BASED SAFETY.html'">Behaviour Based Safety</button>
+                <div id="section12" class="pl-6 py-2 hidden"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container mx-auto mt-4 p-6">
+        <!-- About Us Section -->
+        <section id="behavior-based-safety">
+            <p class="mt-4 text-xl font-serif text-green-900 font-semibold">
+                BEHAVIOR BASED SAFETY - Behavior-Based Safety (BBS) is essential for promoting a culture of safety in the workplace by focusing on the behaviors of employees that contribute to safe or unsafe practices. Here are the key reasons why BBS is required:
+            </p>
+            <hr class="border-t-2 border-gray-300 mt-2" />
+            <!-- Features List -->
+            <ol class="list-decimal list-inside mt-4 text-gray-700">
+                <li class="mt-4"><strong>Reducing Workplace Accidents:</strong>
+                    <ul>
+                        <li class="mt-2">Focus on Behavior: BBS emphasizes the observation and modification of unsafe behaviors, which are often the root causes of accidents. By addressing these behaviors, organizations can significantly reduce the incidence of workplace injuries.</li>
+                        <li class="mt-2">Identifying At-Risk Behaviors: BBS helps identify specific behaviors that lead to accidents, allowing organizations to implement targeted interventions.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Promoting a Safety Culture:</strong>
+                    <ul>
+                        <li class="mt-2">Employee Involvement: BBS encourages active participation from employees in safety processes, fostering a culture where safety is everyone's responsibility.</li>
+                        <li class="mt-2">Ownership of Safety: When employees are involved in identifying unsafe behaviors and solutions, they take greater ownership of safety practices.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Enhancing Communication:</strong>
+                    <ul>
+                        <li class="mt-2">Open Dialogue: BBS creates an environment where employees feel comfortable discussing safety concerns and reporting unsafe behaviors without fear of retribution.</li>
+                        <li class="mt-2">Feedback Mechanisms: Regular observations and discussions about behaviors facilitate constructive feedback, helping to reinforce safe practices.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Continuous Improvement:</strong>
+                    <ul>
+                        <li class="mt-2">Ongoing Evaluation: BBS involves continuous monitoring and evaluation of safety behaviors, allowing organizations to adapt and improve their safety programs over time.</li>
+                        <li class="mt-2">Learning from Incidents: When accidents occur, BBS encourages analyzing behaviors that contributed to the incident, leading to improved safety measures.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Empowering Employees:</strong>
+                    <ul>
+                        <li class="mt-2">Training and Education: BBS programs often include training that empowers employees with the knowledge and skills to recognize unsafe behaviors and make safe choices.</li>
+                        <li class="mt-2">Decision-Making Authority: Employees are encouraged to take responsibility for their safety and the safety of their colleagues, leading to proactive safety management.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Reducing Liability and Costs:</strong>
+                    <ul>
+                        <li class="mt-2">Lowering Incident Rates: By reducing accidents, organizations can decrease workers' compensation claims and associated costs, ultimately benefiting the bottom line.</li>
+                        <li class="mt-2">Insurance Benefits: Companies with effective BBS programs may experience lower insurance premiums due to reduced risk.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Compliance with Regulations:</strong>
+                    <ul>
+                        <li class="mt-2">Meeting Safety Standards: BBS helps organizations meet regulatory requirements by demonstrating a commitment to safety and proactive risk management.</li>
+                        <li class="mt-2">Documenting Safety Efforts: BBS programs provide documentation of safety observations and interventions, which can be valuable during audits.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Improving Employee Morale and Engagement:</strong>
+                    <ul>
+                        <li class="mt-2">Valuing Employee Input: Involving employees in safety discussions and initiatives demonstrates that their input is valued, improving morale and engagement.</li>
+                        <li class="mt-2">Creating a Positive Work Environment: A strong safety culture fosters a more positive work environment, enhancing overall job satisfaction.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Encouraging Safe Practices Beyond the Workplace:</strong>
+                    <ul>
+                        <li class="mt-2">Life Skills: The principles of BBS can extend beyond the workplace, helping employees develop safe behaviors in their personal lives and communities.</li>
+                        <li class="mt-2">Family and Community Impact: By promoting safety awareness, BBS can positively influence the safety practices of employees' families and peers.</li>
+                    </ul>
+                </li>
+                <li class="mt-4"><strong>Tailoring Safety Programs:</strong>
+                    <ul>
+                        <li class="mt-2">Customization: BBS allows organizations to tailor safety programs to specific workplace behaviors and risks, making them more relevant and effective.</li>
+                        <li class="mt-2">Targeted Interventions: By focusing on specific at-risk behaviors, organizations can implement targeted interventions that address their unique safety challenges.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="mt-4 text-gray-700 space-y-1">
+                By incorporating Behavior-Based Safety training into your offerings at Root Core Solutions, you can help organizations create a proactive safety culture, reduce incidents, and enhance employee engagement in safety practices. This approach not only improves workplace safety but also contributes to overall organizational performance.
+            </p>
+        </section>
+        
+        
+    </div>
+</div>
+<footer class="bg-green-900 text-white py-8">
+    <div class="container mx-auto flex justify-between items-center border-t border-gray-700 pt-4">
+        <div class="text-left ml-4">
+            <h2 class="text-lg font-bold mb-2">Root Core Solutions</h2>
+            <p class="text-sm lowercase">Corporate Office</p>
+            <p class="text-sm lowercase">S.NO-10/A1, SHIVAN NIWAS, SATHE COLONY</p>
+            <p class="text-sm lowercase">BEHIND MARATHE CLINIC, CHINCHWADE NAGAR</p>
+            <p class="text-sm lowercase">CHINCHWADE, PUNE CITY, PUNE MAHARASHTRA</p>
+            <p class="text-sm">PIN - 411033</p>
+            <p class="text-sm lowercase">Contact: 9067801911</p>
+        </div>
+        <div class="text-center">
+            <img src="../../../images/logo-removebg-preview (2).png" alt="logo" class="w-36 mx-auto">
+            <h3 class="text-lg font-bold">Root Core Solutions Pvt. Ltd</h3>
+            <!-- <p class="text-sm">Your expert witness partner</p> -->
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://www.facebook.com/profile.php?id=61566025845455" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                <img src="../../../images/socialMediaIcons/facebook.png" alt="Facebook" class="w-8 h-8">
+            </a>
+            <a href="#" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                <img src="../../../images/socialMediaIcons/whatsapp.png" alt="WhatsApp" class="w-8 h-8">
+            </a>
+            <a href="https://www.linkedin.com/company/training-programme-with-quality" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                <img src="../../../images/socialMediaIcons/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+            </a>
+            <a href="https://www.instagram.com/Root_Core_Solutions/" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                <img src="../../../images/socialMediaIcons/instagram.png" alt="Instagram" class="w-8 h-8">
+            </a>
+        </div>
+    </div>
+    <p class="text-sm text-center mt-4">&copy; 2024 Root Core Solutions. All Rights Reserved.</p>
+</footer>
+    <script src="../../../js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+      // Toggle nav elements on click
+      $('#nav-toggle').on('click', function () {
+          $('.navElements').toggle();
+      });
+
+      // Optional: Click events for mobile devices
+      $('.nav-link').on('click', function() {
+          $(this).siblings('.dropdown-menu').toggle();
+      });
+  });
+  </script>
+  <script>
+    // JavaScript to handle scroll event, navbar animation, and height change
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+
+        // Show navbar with animation on scroll and reduce height
+        if (window.scrollY > 50) {
+            navbar.classList.add('bg-[#939fba]', 'shadow-lg', 'p-1'); // Change background color, add shadow, reduce height
+        } else {
+            navbar.classList.remove('bg-[#939fba]', 'shadow-lg', 'p-1'); // Reset background, shadow, and height
+          
+        }
+    });
+
+    // Initial fade-in animation trigger
+    window.onload = function() {
+        document.getElementById('navbar').classList.remove('opacity-0'); // Remove opacity to make the navbar visible with fade-in animation
+    };
+
+
+    
+</script>
+</body>
+</html>

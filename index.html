@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/output.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-[#e5e2c9] fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out opacity-0 animate-fade-in">
+      <div class="container mx-auto flex justify-between items-center">
+          <img src="./images/logo-removebg-preview (2).png" alt="logo" class="h-32">
+          <div class="md:hidden cursor-pointer h-12" id="nav-toggle">☰</div>
+          <div class="nav-elements hidden md:flex md:space-x-4">
+              <ul class="flex flex-row space-x-6">
+                  <li><a href="#home" class="nav-link text-md text-green-900 hover:underline">Home</a></li>
+                  <li class="relative group">
+                      <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
+                      <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
+                          <li><a href="./html/About Us/AboutRootCareSolutions/About US.html" class="dropdown-item block p-2 hover:bg-gray-200">About RootCoreSolutions</a></li>
+                          <li><a href="./html/About Us/News.html" class="dropdown-item block p-2 hover:bg-gray-200">News</a></li>
+                          <li><a href="./html/About Us/Careers.html" class="dropdown-item block p-2 hover:bg-gray-200">Careers</a></li>
+                      </ul>
+                  </li>
+                  <li class="relative group">
+                      <a href="#capabilities" class="nav-link text-md text-green-900 hover:underline">Our Capabilities</a>
+                      <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block w-5/6">
+                          <li><a href="./html/Our Capabilities/Safety.html" class="dropdown-item block p-2 hover:bg-gray-200">Safety</a></li>
+                          <li><a href="./html/Our Capabilities/Quality.html" class="dropdown-item block p-2 hover:bg-gray-200">Quality</a></li>
+                          <li><a href="./html/Our Capabilities/What Makes Us Different.html" class="dropdown-item block p-2 hover:bg-gray-200">What Makes Us Different</a></li>
+                      </ul>
+                  </li>
+                  <!-- <li><a href="./html/Gallery.html" class="nav-link text-md text-green-900 hover:underline">Gallery</a></li> -->
+                  <!-- <li class="relative group">
+                      <a href="#experts" class="nav-link text-md text-green-900 hover:underline">Our Experts</a>
+                      <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
+                          <li><a href="./html/Our Experts/Annasaheb Kalyanrao Shinde.html" class="dropdown-item block p-2 hover:bg-gray-200">Annasaheb Kalyanrao Shinde</a></li>
+                      </ul>
+                  </li> -->
+                  <li><a href="./html/ContactUs.html" class="nav-link text-md text-green-900 hover:underline">Contact Us</a></li>
+              </ul>
+          </div>
+      </div>
+  
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="hidden flex-col items-start mt-4 bg-[#e5e2c9] space-y-4 p-4 md:hidden">
+        <ul class="flex flex-col w-full space-y-2">
+            <li><a href="#home" class="nav-link text-md text-green-900 hover:underline">Home</a></li>
+            <li class="relative">
+                <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
+                <!-- Submenu for About Us -->
+                <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                    <li><a href="./html/About Us/AboutRootCareSolutions/About US.html" class="block p-2 text-gray-700 hover:bg-gray-200">About RootCoreSolutions</a></li>
+                    <li><a href="./html/About Us/News.html" class="block p-2 text-gray-700 hover:bg-gray-200">News</a></li>
+                    <li><a href="./html/About Us/Careers.html" class="block p-2 text-gray-700 hover:bg-gray-200">Careers</a></li>
+                </ul>
+            </li>
+            <li class="relative">
+                <a href="#capabilities" class="nav-link text-md text-green-900 hover:underline">Our Capabilities</a>
+                <!-- Submenu for Capabilities -->
+                <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                    <li><a href="./html/Our Capabilities/Safety.html" class="block p-2 text-gray-700 hover:bg-gray-200">Safety</a></li>
+                    <li><a href="./html/Our Capabilities/Quality.html" class="block p-2 text-gray-700 hover:bg-gray-200">Quality</a></li>
+                    <li><a href="./html/Our Capabilities/What Makes Us Different.html" class="block p-2 text-gray-700 hover:bg-gray-200">What Makes Us Different</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="./html/Gallery.html" class="nav-link text-md text-green-900 hover:underline">Gallery</a></li> -->
+            <!-- <li class="relative">
+                <a href="#experts" class="nav-link text-md text-green-900 hover:underline">Our Experts</a>
+              
+                <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                    <li><a href="./html/Our Experts/Annasaheb Kalyanrao Shinde.html" class="block p-2 text-gray-700 hover:bg-gray-200">Annasaheb Kalyanrao Shinde</a></li>
+                </ul>
+            </li> -->
+            <li><a href="./html/ContactUs.html" class="nav-link text-md text-green-900 hover:underline">Contact Us</a></li>
+        </ul>
+    </div>
+  </nav>
+  <!-- Carousel Section -->
+  <div class="w-auto mx-auto mt-32 bg-black text-white ">
+    <div class="relative overflow-hidden w-full h-[600px]">
+      <!-- Carousel Wrapper -->
+      <div class="flex transition-transform duration-500 ease-in-out w-full h-full" id="carousel">
+        
+        <!-- Slide 1 -->
+        <div class="min-w-full flex items-center p-4 h-full">
+          <div class="w-1/2 h-full flex flex-col justify-center">
+            <a class="text-4xl font-bold mb-4" href="./html/Carousel/Safety, Skill, Premises liability.html">Safety, Skill, Premises liability-</a>
+            <p class="text-gray-700"><strong>Evacuation Procedures:</strong> Develop and communicate clear evacuation routes and assembly points.</li></p>
+          </div>
+          <div class="w-1/2 h-full">
+            <img src="images/20240921_085419.jpg" alt="Image 1" class="w-full h-full object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="min-w-full flex items-center p-4 h-full">
+          <div class="w-1/2 h-full flex flex-col justify-center">
+            <a class="text-4xl font-bold mb-4" href="./html/Carousel/Experienced Quality Team.html">Experienced Quality Team-</a>
+            <p class="text-gray-700"><strong>Safety:</strong> High-quality construction minimizes risks and hazards, protecting workers and future occupants.</p>
+          </div>
+          <div class="w-1/2 h-full">
+            <img src="images/20240921_085432.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="min-w-full flex items-center p-4 h-full">
+          <div class="w-1/2 h-full flex flex-col justify-center">
+            <h2 class="text-4xl font-bold mb-4">Slide 3</h2>
+            <p class="text-gray-700">This is the description for the third slide. Add additional information here.</p>
+          </div>
+          <div class="w-1/2 h-full">
+            <img src="images/20240921_085725.jpg" alt="Image 3" class="w-full h-full object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Carousel Controls -->
+      <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-neutral-400 text-white p-2 rounded-full">❮</button>
+      <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-neutral-400 text-white p-2 rounded-full">❯</button>
+    </div>
+  </div>
+    
+
+    <!-- What We Do Section -->
+     
+    <section>
+      <div class="flex flex-col md:flex-row bg-green-900 h-auto py-7">
+        <!-- Left Section -->
+        <div class="relative w-full md:w-1/2 flex items-center justify-center py-10">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="opacity-50 rounded-full w-48 h-48 md:w-64 md:h-64 bg-white"></div>
+            </div>
+            <div class="relative text-center">
+              <img src="./images/logo-removebg-preview (2) withoutname.png" alt="Logo" class="w-32 md:w-40 mx-auto">
+              <em class="block text-black text-xl md:text-2xl font-bold mt-4 bg-white font-playfair">
+                The Ultimate Destination
+              </em>
+              <em class="block text-black text-xl md:text-2xl font-bold mt-2 bg-white ml-8 font-playfair">
+                of 'Safety & Quality'
+              </em>
+            </div>
+        </div>
+        <!-- Right Section -->
+        <div class="w-full md:w-1/2 p-5 md:p-10 flex flex-col items-center bg-green-900">
+            <h2 class="text-2xl md:text-3xl text-white font-bold mb-6">
+                What We Do
+            </h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <button id="safetyButton" class="px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                  Safety
+                </button>
+                <button id="qualityButton" class="px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                  Quality
+                </button>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="Safety" class="what-we-do bg-green-900 mt-2 hidden">
+      <h2 class="text-white text-4xl font-bold font-serif text-center pt-8">Safety ↓</h2>
+    
+      <div class="container mx-auto py-12">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10">
+    
+          <!-- Single Item: Fire Safety -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/Fire safety.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/fire-flames.png" alt="Fire Safety" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">FIRE SAFETY</p>
+          </div>
+    
+          <!-- Single Item: Work at Height -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/WORK AT HEIGHT.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/climb.png" alt="Work at Height" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">WORK AT HEIGHT</p>
+          </div>
+    
+          <!-- Single Item: Lifting and Rigging -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/LIFTING AND RIGGING.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/crane.png" alt="Lifting and Rigging" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">LIFTING AND RIGGING</p>
+          </div>
+    
+          <!-- Single Item: Work Permit System -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/WORK PERMIT SYSTEM.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/document.png" alt="Work Permit System" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">WORK PERMIT SYSTEM</p>
+          </div>
+    
+          <!-- Single Item: Electrical Safety -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/ELECTRICAL SAFETY.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/high-voltage.png" alt="Electrical Safety" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">ELECTRICAL SAFETY</p>
+          </div>
+    
+          <!-- Single Item: Manual and Material Handling -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/MANUAL AND MATRIAL.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/toolkit.png" alt="Manual and Material Handling" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">MANUAL AND MATERIAL</p>
+          </div>
+    
+          <!-- Single Item: Emergency Response and First Aid -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/EMERGENCY REPONSE AND FIRST AID.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/first-aid-kit.png" alt="Emergency Response and First Aid" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">EMERGENCY RESPONSE AND FIRST AID</p>
+          </div>
+    
+          <!-- Single Item: Scaffolding Safety -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/SCAFFOLDING SAFETY.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/hammer.png" alt="Scaffolding Safety" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">SCAFFOLDING SAFETY</p>
+          </div>
+    
+          <!-- Single Item: Hand and Power Tools -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/HAND TOOLS AND POWER TOOLS.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/wrench (1).png" alt="Hand and Power Tools" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">HAND AND POWER TOOLS</p>
+          </div>
+    
+          <!-- Single Item: Confined Space Safety -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/CONFINED SPACE SAFETY.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/cognitive-function.png" alt="Confined Space Safety" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">CONFINED SPACE SAFETY</p>
+          </div>
+    
+          <!-- Single Item: Logistic Safety -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/LOGISTIC SAFETY.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/delivery (1).png" alt="Logistic Safety" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">LOGISTIC SAFETY</p>
+          </div>
+    
+          <!-- Single Item: Behavior Based Safety -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/What We DO/BEHAVIOR BASED SAFETY.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/emergency-exit.png" alt="Behavior Based Safety" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">BEHAVIOR BASED SAFETY</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Quality" class="what-we-do bg-green-900 mt-2 hidden">
+      <h2 class="text-white text-4xl font-bold font-serif text-center pt-8">Quality ↓</h2>
+    
+      <div class="container mx-auto py-12">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10">
+    
+          <!-- Single Item: Fitter -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Fitter.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/mechanic.png" alt="Fitter" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">FITTER</p>
+          </div>
+    
+          <!-- Single Item: Carpenter -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Carpenter.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/carpenter.png" alt="Carpenter" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">CARPENTER</p>
+          </div>
+    
+          <!-- Single Item: Mason -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Mason.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/helmet.png" alt="Mason" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">MASON</p>
+          </div>
+    
+          <!-- Single Item: Plumber -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Plumber.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/plumber.png" alt="Plumber" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">PLUMBER</p>
+          </div>
+    
+          <!-- Single Item: Welder -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Welder.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/welder.png" alt="Welder" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">WELDER</p>
+          </div>
+    
+          <!-- Single Item: Water Proofing -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/WaterProofing.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/dampness.png" alt="Water Proofing" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">WATER PROOFING</p>
+          </div>
+    
+          <!-- Single Item: Bar Bender -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/BarBender.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/Bar Bender.png" alt="Bar Bender" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">BAR BENDER</p>
+          </div>
+    
+          <!-- Single Item: Scaffolder -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Scaffolder.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/stairs.png" alt="Scaffolder" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">SCAFFOLDER</p>
+          </div>
+    
+          <!-- Single Item: Tile Fitter -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/TileFitter.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/Tile Fitter.png" alt="Tile Fitter" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">TILE FITTER</p>
+          </div>
+    
+          <!-- Single Item: Electrician -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/Electrician.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/electrician.png" alt="Electrician" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">ELECTRICIAN</p>
+          </div>
+    
+          <!-- Single Item: POP Mason -->
+          <div class="flex flex-col items-center text-center">
+            <a href="./html/Our Capabilities/Contents/Training/POPMason.html" class="transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-green-800 p-6 rounded-full shadow-lg">
+                <img src="./images/whatwedo/Quality/POP Mason.png" alt="POP Mason" class="w-16 h-16">
+              </div>
+            </a>
+            <p class="mt-4 font-bold text-white">POP MASON</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+      <section class="why-different py-16">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <!-- Left Section -->
+            <div class="left-section text-left lg:text-center lg:w-1/3 mb-8 lg:mb-0">
+                <h1 class="text-4xl lg:text-5xl font-bold text-yellow-700 leading-snug">
+                    <p>We</p><br><p class="tracking-wider">Build Your</p><br><p class="">Dream Project</p>
+                </h1>
+            </div>
+            <div class="w-1 h-52 bg-gray-400 mr-4  hidden md:block"></div>
+
+
+            <!-- Right Section -->
+            <div class="right-section lg:w-2/3 px-4 lg:px-0">
+                <h2 class="text-lg lg:text-xl font-bold text-green-900">
+                    Root Core Solutions Pvt.Ltd<br>
+                    <em class="text-green-700">rooted with safety, commited to quality</em>
+                </h2>
+                <div class="mt-6">
+                  <!-- SKILLS -->
+                  <div class="info mb-6">
+                      <h3 class="text-xl font-bold text-green-900">Skills.</h3>
+                      <p class="text-base text-gray-800">
+                          Root Core Solutions Pvt Ltd provides the combination of safety and quality training, creating a powerful synergy that not only enhances operational efficiency but also promotes a culture of responsibility and excellence.
+                      </p>
+                  </div>
+                  <!-- QUALITY -->
+                  <div class="info mb-6">
+                      <h3 class="text-xl font-bold text-green-900">Quality.</h3>
+                      <p class="text-base text-gray-800">
+                          Training for improving the quality of work and skill upliftment of workers focuses on enhancing their abilities, knowledge, and overall performance to meet organizational standards. Such training is tailored to the industry and the specific roles of the workers.
+                      </p>
+                  </div>
+                  <!-- EXPERTS -->
+                  <div class="info mb-6">
+                      <h3 class="text-xl font-bold text-green-900">Experts.</h3>
+                      <p class="text-base text-gray-800">
+                          Root Core Solutions' services are comprehensive and cater to a wide range of industries. Our role is to provide training with great quality.
+                      </p>
+                  </div>
+                  <!-- PROFESSIONAL CREDIBILITY -->
+                  <div class="info">
+                      <h3 class="text-xl font-bold text-green-900">Professional Credibility.</h3>
+                      <p class="text-base text-gray-800">
+                          We assist in shaping legal strategies and case preparation by evaluating claims, determining loss exposure, and helping to decide whether or not to pursue subrogation.
+                      </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+      <!-- <section class="recent-news py-16">
+        <div class="container mx-auto text-center">
+          Section Title
+          <h2 class="text-3xl font-bold text-green-900 mb-8 underline font-serif">Recent News</h2>
+    
+          News Grid
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            News Item 1
+            <div class="news-item bg-white p-4 shadow-lg">
+              <img src="./images/20240921_094210.jpg" alt="Camera Image" class="w-full h-48 object-cover mb-4">
+              <p class="text-sm text-gray-600">September 17, 2024</p>
+              <h3 class="text-lg font-bold text-green-900">Video Evidence: Why Your Expert Needs the Original</h3>
+            </div>
+    
+            News Item 2
+            <div class="news-item bg-white p-4 shadow-lg">
+              <img src="./images/20240921_090819.jpg" alt="Person Image" class="w-full h-48 object-cover mb-4">
+              <p class="text-sm text-gray-600">August 6, 2024</p>
+              <h3 class="text-lg font-bold text-green-900">Spray Foam Insulation: Advantages, Properties, and Issues</h3>
+            </div>
+            News Item 3
+            <div class="news-item bg-white p-4 shadow-lg">
+              <img src="./images/20240921_090043.jpg" alt="Parking Lot Image" class="w-full h-48 object-cover mb-4">
+              <p class="text-sm text-gray-600">June 27, 2024</p>
+              <h3 class="text-lg font-bold text-green-900">The Role of Sight Distance in Parking Lot Safety</h3>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Footer Section -->
+      <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center border-t border-gray-700 pt-4">
+          <div class="text-left ml-4">
+            <h2 class="text-lg font-bold mb-2">Root Core Solutions</h2>
+            <p class="text-sm lowercase">Corporate Office</p>
+            <p class="text-sm lowercase">S.NO-10/A1, SHIVAN NIWAS, SATHE COLONY</p>
+            <p class="text-sm lowercase">BEHIND MARATHE CLINIC, CHINCHWADE NAGAR</p>
+            <p class="text-sm lowercase">CHINCHWADE, PUNE CITY, PUNE MAHARASHTRA</p>
+            <p class="text-sm">PIN - 411033</p>
+            <p class="text-sm lowercase">Contact: 9067801911</p>
+        </div>
+            <div class="text-center">
+                <img src="../../images/logo-removebg-preview (2).png" alt="logo" class="h-32 mx-auto">
+                <h3 class="text-lg font-bold">Root Core Solutions Pvt. Ltd</h3>
+                <!-- <p class="text-sm">Your expert witness partner</p> -->
+            </div>
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61566025845455" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/facebook.png" alt="Facebook" class="w-8 h-8">
+                </a>
+                <a href="#" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/whatsapp.png" alt="WhatsApp" class="w-8 h-8">
+                </a>
+                <a href="https://www.linkedin.com/company/training-programme-with-quality" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+                </a>
+                <a href="https://www.instagram.com/Root_Core_Solutions/" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/instagram.png" alt="Instagram" class="w-8 h-8">
+                </a>
+            </div>
+        </div>
+    
+        <p class="text-sm text-center mt-4">&copy; 2024 Root Core Solutions. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/caurosel.js"></script>
+    <script>
+       // Toggle mobile menu
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Toggle submenus
+    const subMenus = document.querySelectorAll('#mobile-menu li.relative > a');
+    subMenus.forEach(subMenu => {
+        subMenu.addEventListener('click', (e) => {
+            e.preventDefault();
+            const nextSubMenu = subMenu.nextElementSibling;
+            if (nextSubMenu) {
+                nextSubMenu.classList.toggle('hidden');
+            }
+        });
+    });
+  </script>
+  
+    <script>
+          $(document).ready(function () {
+        // Toggle nav elements on click
+        $('#nav-toggle').on('click', function () {
+            $('.navElements').toggle();
+        });
+
+        // Optional: Click events for mobile devices
+        $('.nav-link').on('click', function() {
+            $(this).siblings('.dropdown-menu').toggle();
+        });
+    });
+    </script>
+    <script>
+      // JavaScript to handle scroll event, navbar animation, and height change
+      window.addEventListener('scroll', function() {
+          const navbar = document.getElementById('navbar');
+  
+          // Show navbar with animation on scroll and reduce height
+          if (window.scrollY > 50) {
+              navbar.classList.add('bg-[#939fba]', 'shadow-lg', 'p-1'); // Change background color, add shadow, reduce height
+          } else {
+              navbar.classList.remove('bg-[#939fba]', 'shadow-lg', 'p-1'); // Reset background, shadow, and height
+            
+          }
+      });
+  
+      // Initial fade-in animation trigger
+      window.onload = function() {
+          document.getElementById('navbar').classList.remove('opacity-0'); // Remove opacity to make the navbar visible with fade-in animation
+      };
+
+// Select the element you want to toggle
+const SafetyButton = document.getElementById('safetyButton');
+const SafetySection = document.getElementById('Safety');
+const QualityButton = document.getElementById('qualityButton');
+const QualitySection = document.getElementById('Quality');
+
+// Add a click event listener to the button
+SafetyButton.addEventListener('click', function() {
+  // Toggle the 'hidden' class on the section
+  SafetySection.classList.toggle('hidden');
+});
+QualityButton.addEventListener('click', function() {
+  // Toggle the 'hidden' class on the section
+  QualitySection.classList.toggle('hidden');
+});
+
+      
+  </script>
+  
+</body>
+</html>

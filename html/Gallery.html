@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#e5e2c9]">
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-[#e5e2c9] w-full z-50 transition-all duration-500 ease-in-out opacity-100">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="../../../../images/logo-removebg-preview (2).png" alt="logo" class="h-32">
+            <div class="md:hidden cursor-pointer h-12" id="nav-toggle">☰</div>
+            <div class="nav-elements hidden md:flex md:space-x-4">
+                <ul class="flex flex-row space-x-6">
+                    <li><a href="../index.html" class="nav-link text-md text-green-900 hover:underline">Home</a></li>
+                    <li class="relative group">
+                        <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
+                        <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
+                            <li><a href="./About Us/AboutRootCareSolutions/About US.html" class="dropdown-item block p-2 hover:bg-gray-200">About RootCoreSolutions</a></li>
+                            <li><a href="./About Us/News.html" class="dropdown-item block p-2 hover:bg-gray-200">News</a></li>
+                            <li><a href="./About Us/Careers.html" class="dropdown-item block p-2 hover:bg-gray-200">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#capabilities" class="nav-link text-md text-green-900 hover:underline">Our Capabilities</a>
+                        <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block w-5/6">
+                            <li><a href="./Our Capabilities/Safety.html" class="dropdown-item block p-2 hover:bg-gray-200">Safety</a></li>
+                            <li><a href="./Our Capabilities/Quality.html" class="dropdown-item block p-2 hover:bg-gray-200">Quality</a></li>
+                            <li><a href="./Our Capabilities/What Makes Us Different.html" class="dropdown-item block p-2 hover:bg-gray-200">What Makes Us Different</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Gallery.html" class="nav-link text-md text-green-900 hover:underline">Gallery</a></li>
+                    <!-- <li class="relative group">
+                        <a href="#experts" class="nav-link text-md text-green-900 hover:underline">Our Experts</a>
+                        <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
+                            <li><a href="../../Our Experts/Annasaheb Kalyanrao Shinde.html" class="dropdown-item block p-2 hover:bg-gray-200">Annasaheb Kalyanrao Shinde</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="./ContactUs.html" class="nav-link text-md text-green-900 hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div class="md:hidden">
+            <div id="mobile-menu" class="hidden flex-col items-start mt-4">
+                <ul class="flex flex-col w-full space-y-2">
+                    <li><a href="../../../index.html" class="nav-link text-md text-green-900 hover:underline">Home</a></li>
+                    <li class="relative">
+                        <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
+                        <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                            <li><a href="./About US.html" class="block p-2 text-gray-700 hover:bg-gray-200">About RootCoreSolutions</a></li>
+                            <li><a href="#News" class="block p-2 text-gray-700 hover:bg-gray-200">News</a></li>
+                            <li><a href="#Careers" class="block p-2 text-gray-700 hover:bg-gray-200">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#capabilities" class="nav-link text-md text-green-900 hover:underline">Our Capabilities</a>
+                        <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                            <li><a href="../Our Capabilities/Safety.html" class="block p-2 text-gray-700 hover:bg-gray-200">Safety</a></li>
+                            <li><a href="../Our Capabilities/Quality.html" class="block p-2 text-gray-700 hover:bg-gray-200">Quality</a></li>
+                            <li><a href="../html/Our Capabilities/What Makes Us Different.html" class="block p-2 text-gray-700 hover:bg-gray-200">What Makes Us Different</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Gallery.html" class="nav-link text-md text-green-900 hover:underline">Gallery</a></li>
+                    <!-- <li class="relative">
+                        <a href="#experts" class="nav-link text-md text-green-900 hover:underline">Our Experts</a>
+                        <ul class="bg-white shadow-md ml-4 space-y-2 hidden">
+                            <li><a href="./Our Experts/Annasaheb Kalyanrao Shinde.html" class="block p-2 text-gray-700 hover:bg-gray-200">Annasaheb Kalyanrao Shinde</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="./ContactUs.html" class="nav-link text-md text-green-900 hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Gallery Section -->
+    <section class="container mx-auto py-16 px-4">
+        <h1 class="text-4xl font-bold text-center text-green-900 mb-10">Gallery</h1>
+    
+        <!-- Responsive Image Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-container">
+            <!-- Gallery Images - Keeping the images you already have -->
+            <!-- For example, this is image 1 -->
+            <div class="relative group">
+                <img src="../images/gallery/20240920_092026.jpg" alt="Gallery Image 1" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">Image 1</span>
+                </div>
+            </div>
+            
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092519.jpg" alt="Gallery Image 2" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 2</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092526.jpg" alt="Gallery Image 3" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 3</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092800.jpg" alt="Gallery Image 4" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 4</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092807.jpg" alt="Gallery Image 5" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 5</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092829.jpg" alt="Gallery Image 6" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 6</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092834.jpg" alt="Gallery Image 7" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 7</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092902.jpg" alt="Gallery Image 8" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 8</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_092922.jpg" alt="Gallery Image 9" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 9</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_093000.jpg" alt="Gallery Image 10" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 10</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_093014.jpg" alt="Gallery Image 11" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 11</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_093026.jpg" alt="Gallery Image 12" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 12</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_093104.jpg" alt="Gallery Image 13" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 13</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240920_093108.jpg" alt="Gallery Image 14" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 14</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240921_085357.jpg" alt="Gallery Image 15" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 15</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240921_085419.jpg" alt="Gallery Image 16" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 16</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240921_085432.jpg" alt="Gallery Image 17" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 17</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240921_085457.jpg" alt="Gallery Image 18" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 18</span>
+        </div>
+    </div>
+    <div class="relative group">
+        <img src="../images/gallery/20240921_085505.jpg" alt="Gallery Image 19" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white font-bold text-xl">Image 19</span>
+        </div>
+    </div>
+    <div class="relative group">
+    <img src="../images/gallery/20240921_085512.jpg" alt="Gallery Image 20" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 20</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085523.jpg" alt="Gallery Image 21" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 21</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085528.jpg" alt="Gallery Image 22" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 22</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085554.jpg" alt="Gallery Image 23" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 23</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085634.jpg" alt="Gallery Image 24" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 24</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085639.jpg" alt="Gallery Image 25" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 25</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085645.jpg" alt="Gallery Image 26" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 26</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085725.jpg" alt="Gallery Image 27" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 27</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085731.jpg" alt="Gallery Image 28" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 28</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085901.jpg" alt="Gallery Image 29" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 29</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085907.jpg" alt="Gallery Image 30" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 30</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090039.jpg" alt="Gallery Image 31" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 31</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090043.jpg" alt="Gallery Image 32" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 32</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090104.jpg" alt="Gallery Image 33" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 33</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090109.jpg" alt="Gallery Image 34" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 34</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090309.jpg" alt="Gallery Image 35" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 35</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090315.jpg" alt="Gallery Image 36" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 36</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090321.jpg" alt="Gallery Image 37" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 37</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_093958.jpg" alt="Gallery Image 38" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 38</span>
+    </div>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094011.jpg" alt="Gallery Image 39" class="w-96 h-96 object-cover rounded-lg shadow-lg">
+    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span class="text-white font-bold text-xl">Image 39</span>
+    </div>
+</div>
+
+
+<div class="relative group">
+    <img src="../images/gallery/20240921_085523.jpg" alt="Image 40" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 40</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085528.jpg" alt="Image 41" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 41</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085554.jpg" alt="Image 42" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 42</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085634.jpg" alt="Image 43" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 43</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085639.jpg" alt="Image 44" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 44</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085645.jpg" alt="Image 45" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 45</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085725.jpg" alt="Image 46" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 46</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085731.jpg" alt="Image 47" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 47</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085901.jpg" alt="Image 48" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 48</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_085907.jpg" alt="Image 49" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 49</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090039.jpg" alt="Image 50" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 50</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090043.jpg" alt="Image 51" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 51</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090104.jpg" alt="Image 52" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 52</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090109.jpg" alt="Image 53" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 53</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090309.jpg" alt="Image 54" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 54</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090315.jpg" alt="Image 55" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 55</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_090321.jpg" alt="Image 56" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 56</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_093958.jpg" alt="Image 57" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 57</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094011.jpg" alt="Image 58" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 58</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094019.jpg" alt="Image 59" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 59</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094042.jpg" alt="Image 60" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 60</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094050.jpg" alt="Image 61" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 61</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094055.jpg" alt="Image 62" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 62</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094059.jpg" alt="Image 63" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 63</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/20240921_094159.jpg" alt="Image 64" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 64</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0065.jpg" alt="Image 65" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 65</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0066.jpg" alt="Image 66" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 66</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0067.jpg" alt="Image 67" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 67</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0068.jpg" alt="Image 68" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 68</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0069.jpg" alt="Image 69" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 69</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0070.jpg" alt="Image 70" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 70</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0071.jpg" alt="Image 71" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 71</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0072.jpg" alt="Image 72" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 72</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0073.jpg" alt="Image 73" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 73</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0074.jpg" alt="Image 74" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 74</span>
+</div>
+<div class="relative group">
+    <img src="../images/gallery/IMG_0075.jpg" alt="Image 75" class="w-96 h-96 rounded-lg shadow-md">
+    <span class="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl">Image 75</span>
+</div>
+    </div>
+</div>
+<div class="text-center mt-8">
+    <button id="show-more-btn" class="bg-green-600 text-white px-4 py-2 rounded-lg">Show More</button>
+</div>
+    </section>
+    <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center border-t border-gray-700 pt-4">
+            <div class="text-left ml-4">
+                <h2 class="text-lg font-bold mb-2">Root Core Solutions</h2>
+                <p class="text-sm lowercase">Corporate Office</p>
+                <p class="text-sm lowercase">S.NO-10/A1, SHIVAN NIWAS, SATHE COLONY</p>
+                <p class="text-sm lowercase">BEHIND MARATHE CLINIC, CHINCHWADE NAGAR</p>
+                <p class="text-sm lowercase">CHINCHWADE, PUNE CITY, PUNE MAHARASHTRA</p>
+                <p class="text-sm">PIN - 411033</p>
+                <p class="text-sm lowercase">Contact: 9067801911</p>
+            </div>
+            
+            <div class="text-center">
+                <img src="../../images/logo-removebg-preview (2).png" alt="logo" class="h-32 mx-auto">
+                <h3 class="text-lg font-bold">Root Core Solutions Pvt. Ltd</h3>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61566025845455" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/facebook.png" alt="Facebook" class="w-8 h-8">
+                </a>
+                <a href="#" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/whatsapp.png" alt="WhatsApp" class="w-8 h-8">
+                </a>
+                <a href="https://www.linkedin.com/company/training-programme-with-quality" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+                </a>
+                <a href="https://www.instagram.com/Root_Core_Solutions/" class="transition transform hover:scale-110 hover:bg-gray-800 rounded-full p-2">
+                    <img src="../../../images/socialMediaIcons/instagram.png" alt="Instagram" class="w-8 h-8">
+                </a>
+            </div>
+        </div>
+    
+        <p class="text-sm text-center mt-4">&copy; 2024 Root Core Solutions. All Rights Reserved.</p>
+    </footer>
+</body>
+    <script>
+        // Toggle menu visibility for mobile
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('hidden');
+        }
+    </script>
+     <script>
+        // Toggle the mobile menu
+        $('#nav-toggle').click(function () {
+            $('#mobile-menu').toggle();
+        });
+
+        // Toggle sections for collapsible content
+        function toggleSection(sectionId) {
+            $('#' + sectionId).toggle();
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll("#gallery-container .group");
+            const showMoreBtn = document.getElementById("show-more-btn");
+    
+            // Initially display only the first 20 images
+            const initialLimit = 20;
+            let currentLimit = initialLimit;
+    
+            function updateGalleryVisibility() {
+                images.forEach((image, index) => {
+                    if (index < currentLimit) {
+                        image.style.display = "block";
+                    } else {
+                        image.style.display = "none";
+                    }
+                });
+    
+                // Hide the button if all images are shown
+                if (currentLimit >= images.length) {
+                    showMoreBtn.style.display = "none";
+                }
+            }
+    
+            // Show more images when the button is clicked
+            showMoreBtn.addEventListener("click", function () {
+                currentLimit += initialLimit;  // Load 20 more images
+                updateGalleryVisibility();
+            });
+    
+            // Initial update to hide images beyond the first 20
+            updateGalleryVisibility();
+        });
+    </script>
+    
+</html>
