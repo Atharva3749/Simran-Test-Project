@@ -23,8 +23,8 @@
                       <a href="#about" class="nav-link text-md text-green-900 hover:underline">About Us</a>
                       <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block">
                           <li><a href="./html/About Us/AboutRootCareSolutions/About US.html" class="dropdown-item block p-2 hover:bg-gray-200">About RootCoreSolutions</a></li>
-                          <li><a href="./html/About Us/Our Goals.html" class="dropdown-item block p-2 hover:bg-gray-200">Our Goals</a></li>
-                          <li><a href="./html/About Us/Our Vision.html" class="dropdown-item block p-2 hover:bg-gray-200">Our Vision</a></li>
+                          <li><a href="./html/About Us/AboutRootCareSolutions/Our Goals.html" class="dropdown-item block p-2 hover:bg-gray-200">Our Goals</a></li>
+                          <li><a href="./html/About Us/AboutRootCareSolutions/Our Vision.html" class="dropdown-item block p-2 hover:bg-gray-200">Our Vision</a></li>
                       </ul>
                   </li>
                   <li class="relative group">
@@ -101,7 +101,7 @@
         <!-- Slide 2 -->
         <div class="min-w-full flex items-center p-4 h-full">
           <div class="w-1/2 h-full flex flex-col justify-center">
-            <a class="text-4xl font-bold mb-4" href="./html/Carousel/Experienced Quality Team.html">Experienced Quality Team-</a>
+            <a class="text-4xl font-bold mb-9" href="./html/Carousel/Experienced Quality Team.html">Experienced Quality Team-</a>
             <p class="text-gray-700"><strong>Safety:</strong> High-quality construction minimizes risks and hazards, protecting workers and future occupants.</p>
           </div>
           <div class="w-1/2 h-full">
@@ -136,10 +136,10 @@
         <!-- Left Section -->
         <div class="relative w-full md:w-1/2 flex items-center justify-center py-10">
             <div class="absolute inset-0 flex items-center justify-center">
-                <div class="opacity-50 rounded-full w-192 h-192 md:w-64 md:h-64 bg-white"></div>
+                <div class="opacity-50 rounded-full w-24 h-192 md:w-80 md:h-80 bg-white"></div>
             </div>
             <div class="relative text-center">
-              <img src="./images/logo-removebg-preview (2) withoutname.png" alt="Logo" class="w-50 md:w-40 mx-auto">
+              <img src="./images/logo-removebg-preview (2) withoutname.png" alt="Logo" class="w-32 md:w-40 mx-auto">
               <em class="block text-black text-xl md:text-2xl font-bold mt-4  font-playfair">
                 The Ultimate Destination
               </em>
@@ -150,14 +150,14 @@
         </div>
         <!-- Right Section -->
         <div class="w-full md:w-1/2 p-5 md:p-10 flex flex-col items-center bg-green-900">
-            <h2 class="text-3xl md:text-3xl text-white font-bold mb-6">
+            <h2 class="text-3xl md:text-5xl text-white font-bold mb-6">
                 What We Do
             </h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-                <button id="safetyButton" class="px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                <button id="safetyButton" class="px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-400 text-3xl">
                   Safety
                 </button>
-                <button id="qualityButton" class="px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                <button id="qualityButton" class="px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-400 text-3xl">
                   Quality
                 </button>
             </div>
@@ -580,20 +580,23 @@
       window.onload = function() {
           document.getElementById('navbar').classList.remove('opacity-0'); // Remove opacity to make the navbar visible with fade-in animation
       };
-
-// Select the element you want to toggle
+// Select the elements you want to toggle
 const SafetyButton = document.getElementById('safetyButton');
 const SafetySection = document.getElementById('Safety');
 const QualityButton = document.getElementById('qualityButton');
 const QualitySection = document.getElementById('Quality');
 
-// Add a click event listener to the button
+// Add a click event listener to the Safety button
 SafetyButton.addEventListener('click', function() {
-  // Toggle the 'hidden' class on the section
+  // Add the 'hidden' class to both sections to hide them
   SafetySection.classList.toggle('hidden');
+  QualitySection.classList.add('hidden');
 });
+
+// Add a click event listener to the Quality button
 QualityButton.addEventListener('click', function() {
-  // Toggle the 'hidden' class on the section
+  // Add the 'hidden' class to both sections to hide them
+  SafetySection.classList.add('hidden');
   QualitySection.classList.toggle('hidden');
 });
 

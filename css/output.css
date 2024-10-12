@@ -700,6 +700,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .ml-12 {
   margin-left: 3rem;
 }
@@ -858,10 +862,6 @@ video {
 
 .w-36 {
   width: 9rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-5\/6 {
@@ -1567,8 +1567,8 @@ video {
     display: none;
   }
 
-  .md\:h-64 {
-    height: 16rem;
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:w-1\/2 {
@@ -1579,8 +1579,8 @@ video {
     width: 10rem;
   }
 
-  .md\:w-64 {
-    width: 16rem;
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:max-w-3xl {
@@ -1614,9 +1614,9 @@ video {
     line-height: 2rem;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
